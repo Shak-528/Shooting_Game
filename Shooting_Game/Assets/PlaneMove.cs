@@ -7,9 +7,9 @@ public class PlaneMove : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer activeSprite;
 
-    public float initialSpeed = 5.0f; // Set your desired initial speed here
-    public float speedIncreaseRate = 0.1f; // Set your desired speed increase rate here
-    public float maxSpeed = 10.0f; // Set your desired maximum speed here
+    public float initialSpeed = 5.0f; // Set your initial speed
+    public float speedIncreaseRate = 0.1f; // Set your speed increase rate
+    public float maxSpeed = 10.0f; // Set your maximum speed
     private float currentSpeed;
 
     void Awake()

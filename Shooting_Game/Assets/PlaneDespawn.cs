@@ -13,7 +13,7 @@ public class PlaneDespawn : MonoBehaviour
             PlanePool.Instance.ReturnPlane(other.gameObject);
 
             // Decrease player health
-            //PlayerHealth.Instance.DecreaseHealth(1);
+            Player.Instance.TakeDamage(10);
         }
     }
 }

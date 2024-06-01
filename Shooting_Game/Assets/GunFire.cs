@@ -21,6 +21,12 @@ public class GunFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Stop checking for mouse input if the player is dead
+        if (Player.Instance.currentHealth <= 0)
+        {
+            return;
+        }
+
         // Check if the left mouse button was clicked
         if (Input.GetMouseButtonDown(0))
         {
